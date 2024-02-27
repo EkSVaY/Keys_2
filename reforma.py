@@ -26,7 +26,9 @@ def main():
                                * cost_km_2024 + (cost_fabric * 20)) / budget_in_year)
     total_price =
     km_of_workers =
-    percentage_of_salaries =
+    percentage_of_salaries = ((worker_2023 * salary *  tax * 12)
+                              / budget_in_year + (worker_2024 * salary * tax * (final_year - 2024) * 12)
+                              / (budget_in_year * (final_year - 2024)))
     budget_in_year_5 =
 
 
