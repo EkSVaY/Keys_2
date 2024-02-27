@@ -11,7 +11,9 @@ def main():
     :return: None
     '''
 
+    this_year = 2023
     budget_in_year = float(input()) * 10 ** 9
+    cost_fabric = 4 * 10 ** 9
     length_of_roads = 1575.6 * 10 ** 3
     cost_km_2023 = 55 * 10 ** 6
     cost_km_2024 = 35 * 10 ** 6
@@ -20,8 +22,9 @@ def main():
     salary = 100 * 10 ** 3
     tax = 0.13
 
-    final_year =
-    total_price = 1
+    final_year = this_year + (((length_of_roads - (budget_in_year / cost_km_2023))
+                               * cost_km_2024 + (cost_fabric * 20)) / budget_in_year)
+    total_price =
     km_of_workers =
     percentage_of_salaries =
     budget_in_year_5 =
