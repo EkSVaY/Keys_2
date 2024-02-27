@@ -12,7 +12,7 @@ def main():
     '''
 
     this_year = 2023
-    budget_in_year = float(input()) * 10 ** 9
+    budget_in_year = float(input(ru.BUDGET_BIL)) * 10 ** 9
     cost_fabric = 4 * 10 ** 9
     length_of_roads = 1575.6 * 10 ** 3
     cost_km_2023 = 55 * 10 ** 6
