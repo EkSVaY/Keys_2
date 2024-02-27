@@ -23,12 +23,13 @@ def main():
     tax = 0.13
 
     final_year = (this_year + 1) + (((length_of_roads - ((budget_in_year - (cost_fabric * 20)) / cost_km_2023))
-                               * cost_km_2024) / budget_in_year)
-    total_price =
+                * cost_km_2024) / budget_in_year)
+    total_price = (budget_in_year - (cost_fabric * 20)) + (length_of_roads -
+                  (budget_in_year - (cost_fabric * 20)) / cost_km_2023) * cost_km_2024
     km_of_workers = ((((worker_2023 * salary * 12) * tax) / cost_km_2023)
-                     + (((worker_2024 * salary * 12) * (final_year - 2023) * tax) / cost_km_2024))
+                    + (((worker_2024 * salary * 12) * (final_year - 2023) * tax) / cost_km_2024))
     percentage_of_salaries =
-    budget_in_year_5 =
+    budget_in_year_5 = total_price / 5
 
     print(f"{ru.FINAL_YEAR_BUILD} - {int(final_year)}")
     print(f"{ru.TOTAL_PRICE_BUILD} - {total_price}")
