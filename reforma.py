@@ -21,7 +21,7 @@ def main():
     tax = 0.13
 
     final_year =
-    total_price =
+    total_price = 1
     km_of_workers =
     percentage_of_salaries =
     budget_in_year_5 =
