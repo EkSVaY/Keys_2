@@ -22,7 +22,7 @@ def main():
     salary = 100 * 10 ** 3
     tax = 0.13
 
-    final_year = (this_year + 1) + (((length_of_roads - (budget_in_year - (cost_fabric * 20) / cost_km_2023))
+    final_year = (this_year + 1) + (((length_of_roads - ((budget_in_year - (cost_fabric * 20)) / cost_km_2023))
                                * cost_km_2024) / budget_in_year)
     total_price =
     km_of_workers = ((((worker_2023 * salary * 12) * tax) / cost_km_2023)
