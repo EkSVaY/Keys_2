@@ -28,7 +28,9 @@ def main():
                   (budget_in_year - (cost_fabric * 20)) / cost_km_2023) * cost_km_2024
     km_of_workers = ((((worker_2023 * salary * 12) * tax) / cost_km_2023)
                     + (((worker_2024 * salary * 12) * (final_year - 2023) * tax) / cost_km_2024))
-    percentage_of_salaries =
+    percentage_of_salaries = ((worker_2023 * salary * tax * 12)
+                              / budget_in_year + (worker_2024 * salary * tax * (final_year - 2024) * 12)
+                              / (budget_in_year * (final_year - 2024)))
     budget_in_year_5 = total_price / 5
 
     print(f"{ru.FINAL_YEAR_BUILD} - {int(final_year)}")
